@@ -237,6 +237,7 @@ body
         &:active
             background: #179eff
     &__button-img
+        padding-top: 2px
         width: 12.89px
     &__description
         padding-top: 3px
@@ -272,6 +273,7 @@ body
         font-size: 25px
         position: relative
         transition: 0.2s
+        cursor: pointer
         &:hover
             transform: scale(1.02)
             -webkit-box-shadow: 4px -1px 8px -2px rgba(34, 60, 80, 0.31)
@@ -300,10 +302,10 @@ body
             &--first
                 top: -10px
                 left: 12px
-                width: 415px
+                width: 416px
             &--second
                 top: -21px
-                left: 115px
+                left: 116px
                 width: 267px
             &--third
                 top: 81px
@@ -339,29 +341,39 @@ body
     height: 962px
     background: #F2F2F2
     &__wrapper
+        position: relative
         padding-top: 87px
-        width: 1562px
+        width: 1920px
         margin: 0 auto
+    &__best-quelity-backgraund
+        position: absolute
+        left: 9px
+        top: 164px
+        z-index: 1
     &__description
         width: 553px
         margin-top: 96px
         margin-left: -80px
     &__exposition
         display: flex
+        width: 1562px
+        margin: 0 auto
     &__img
-        width: 874px
-        .link
-            padding-left: 1px
-        .description
-            &__title
-                margin-bottom: 37px
-            &__exposition
-                margin-bottom: 41px
+        z-index: 2
+        width: 875px
+    .link
+        padding-left: 1px
+    .description
+        &__title
+            margin-bottom: 38px
+        &__exposition
+            margin-bottom: 40px
     &__cards
-        width: 100%
+        width: 1401px
         display: flex
-        margin-top: 48px
-        justify-content: space-between
+        margin: 0 auto
+        margin-top: 47px
+        gap: 27px
         .card
             width: 330px
             height: 289px
@@ -372,6 +384,12 @@ body
             &__backgraund-img
                 position: absolute
                 right: 0px
+                &--third
+                    top:-3px
+                    right: 2px
+                &--fourth
+                    top:-3px
+                    right: 2px
             &__icon-wrapper
                 width: 70px
                 height: 70px
@@ -383,7 +401,7 @@ body
                 align-items: center
 
                 margin-top: 30px
-                margin-left: 30px
+                margin-left: 31px
                 margin-bottom: 25px
             &__icon
                 width: 36.11px
@@ -392,16 +410,118 @@ body
                 font-weight: 700
                 font-size: 22px
                 line-height: 28px
-
+                width: 280px
+                margin-left: 31px
                 color: #FFFFFF
                 margin-bottom: 13px
+                &--first
+                    width: 205px
             &__description
                 font-weight: 300
                 font-size: 16px
                 line-height: 20px
-
+                width: 276px
+                margin-left: 30px
                 color: #B7B7B7
+                &--fourth
+                    width: 210px
 
-
-
-        
+.news
+    background: #F5F5F5
+    width: 100%
+    height: 1719px
+    &__wrapper
+        width: 1401px
+        margin: 0 auto
+        padding-top: 177px
+    &__description
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+    .description
+        padding-right: 0px
+        &__wrapper
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            width: 721px
+        &__exposition
+            margin-bottom: 69px
+    .link
+        margin-top: 3px
+        &__description
+            margin-right: 17px
+        &__button
+            margin-right: 0px
+    &__cards
+        gap: 40px 65px
+        display: flex
+        flex-wrap: wrap
+        .card
+            font-family: "Roboto"
+            width: 415px
+            height: 365px
+            background-image: url("./assets/png/news-backgraund-1.png")
+            overflow: hidden
+            position: relative
+            border-radius: 45px 0px 0px 0px
+            &__backgraund-img
+                width: 415px
+                height: 259px
+                position: absolute
+                transition: 0.6s
+                cursor: pointer
+                &:hover
+                    transform: scale(1.1)
+            &__img-part-one
+                border: 1px solid red
+                top: 219px
+                width:415px
+                height: 146px
+                position: absolute
+                z-index: 1
+            &__img-part-two
+                right: 11.91px
+                 border: 1px solid red
+                width: 95.09px
+                height: 35.21px
+                top: 242.5px
+                z-index: 2
+                position: absolute
+            &__content
+                margin-top: 243px
+                margin-left: 31px
+                position: relative
+                z-index: 3
+                width: 365px
+            &__title-wrapper
+                margin-right: 0px
+                width: 359px
+                z-index: 3
+                height: 64px
+                display: flex
+                justify-content: space-between
+                margin-bottom: 11px
+            &__title
+                width: 200px
+                font-weight: 700
+                font-size: 25px
+                line-height: 32px
+                color: #292D32
+            &__button
+                width: 66px
+                height: 66px
+                margin-top: -10px
+                border-radius: 50%
+                background: #292D32
+                border: 12px solid #FFFFFF
+                cursor: pointer
+                &:hover
+                    background: #3b3e41
+                &:active
+                    background: #1f2021
+            &__description
+                font-weight: 400
+                font-size: 14px
+                line-height: 21px
+                color: #292D32

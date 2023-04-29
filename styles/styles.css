@@ -403,6 +403,7 @@ body {
   background: #179eff;
 }
 .link__button-img {
+  padding-top: 2px;
   width: 12.89px;
 }
 .link__description {
@@ -442,6 +443,7 @@ body {
   font-size: 25px;
   position: relative;
   transition: 0.2s;
+  cursor: pointer;
 }
 .catalog .card:hover {
   transform: scale(1.02);
@@ -475,11 +477,11 @@ body {
 .catalog .card__img--first {
   top: -10px;
   left: 12px;
-  width: 415px;
+  width: 416px;
 }
 .catalog .card__img--second {
   top: -21px;
-  left: 115px;
+  left: 116px;
   width: 267px;
 }
 .catalog .card__img--third {
@@ -523,9 +525,16 @@ body {
   background: #F2F2F2;
 }
 .benefits__wrapper {
+  position: relative;
   padding-top: 87px;
-  width: 1562px;
+  width: 1920px;
   margin: 0 auto;
+}
+.benefits__best-quelity-backgraund {
+  position: absolute;
+  left: 9px;
+  top: 164px;
+  z-index: 1;
 }
 .benefits__description {
   width: 553px;
@@ -534,24 +543,28 @@ body {
 }
 .benefits__exposition {
   display: flex;
+  width: 1562px;
+  margin: 0 auto;
 }
 .benefits__img {
-  width: 874px;
+  z-index: 2;
+  width: 875px;
 }
-.benefits__img .link {
+.benefits .link {
   padding-left: 1px;
 }
-.benefits__img .description__title {
-  margin-bottom: 37px;
+.benefits .description__title {
+  margin-bottom: 38px;
 }
-.benefits__img .description__exposition {
-  margin-bottom: 41px;
+.benefits .description__exposition {
+  margin-bottom: 40px;
 }
 .benefits__cards {
-  width: 100%;
+  width: 1401px;
   display: flex;
-  margin-top: 48px;
-  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 47px;
+  gap: 27px;
 }
 .benefits__cards .card {
   width: 330px;
@@ -565,6 +578,14 @@ body {
   position: absolute;
   right: 0px;
 }
+.benefits__cards .card__backgraund-img--third {
+  top: -3px;
+  right: 2px;
+}
+.benefits__cards .card__backgraund-img--fourth {
+  top: -3px;
+  right: 2px;
+}
 .benefits__cards .card__icon-wrapper {
   width: 70px;
   height: 70px;
@@ -574,7 +595,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 31px;
   margin-bottom: 25px;
 }
 .benefits__cards .card__icon {
@@ -585,12 +606,144 @@ body {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
+  width: 280px;
+  margin-left: 31px;
   color: #FFFFFF;
   margin-bottom: 13px;
+}
+.benefits__cards .card__title--first {
+  width: 205px;
 }
 .benefits__cards .card__description {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
+  width: 276px;
+  margin-left: 30px;
   color: #B7B7B7;
+}
+.benefits__cards .card__description--fourth {
+  width: 210px;
+}
+
+.news {
+  background: #F5F5F5;
+  width: 100%;
+  height: 1719px;
+}
+.news__wrapper {
+  width: 1401px;
+  margin: 0 auto;
+  padding-top: 177px;
+}
+.news__description {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.news .description {
+  padding-right: 0px;
+}
+.news .description__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 721px;
+}
+.news .description__exposition {
+  margin-bottom: 69px;
+}
+.news .link {
+  margin-top: 3px;
+}
+.news .link__description {
+  margin-right: 17px;
+}
+.news .link__button {
+  margin-right: 0px;
+}
+.news__cards {
+  gap: 40px 65px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.news__cards .card {
+  font-family: "Roboto";
+  width: 415px;
+  height: 365px;
+  background-image: url("./assets/png/news-backgraund-1.png");
+  overflow: hidden;
+  position: relative;
+  border-radius: 45px 0px 0px 0px;
+}
+.news__cards .card__backgraund-img {
+  width: 415px;
+  height: 259px;
+  position: absolute;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.news__cards .card__backgraund-img:hover {
+  transform: scale(1.1);
+}
+.news__cards .card__img-part-one {
+  border: 1px solid red;
+  top: 219px;
+  width: 415px;
+  height: 146px;
+  position: absolute;
+  z-index: 1;
+}
+.news__cards .card__img-part-two {
+  right: 11.91px;
+  right-border: 1px solid red;
+  width: 95.09px;
+  height: 35.21px;
+  top: 242.5px;
+  z-index: 2;
+  position: absolute;
+}
+.news__cards .card__content {
+  margin-top: 243px;
+  margin-left: 31px;
+  position: relative;
+  z-index: 3;
+  width: 365px;
+}
+.news__cards .card__title-wrapper {
+  margin-right: 0px;
+  width: 359px;
+  z-index: 3;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+.news__cards .card__title {
+  width: 200px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  color: #292D32;
+}
+.news__cards .card__button {
+  width: 66px;
+  height: 66px;
+  margin-top: -10px;
+  border-radius: 50%;
+  background: #292D32;
+  border: 12px solid #FFFFFF;
+  cursor: pointer;
+}
+.news__cards .card__button:hover {
+  background: #3b3e41;
+}
+.news__cards .card__button:active {
+  background: #1f2021;
+}
+.news__cards .card__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #292D32;
 }/*# sourceMappingURL=styles.css.map */
