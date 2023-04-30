@@ -562,7 +562,7 @@ body
                 line-height: 21px
                 color: #292D32
 
-.form
+.about-us
     width: 100%
     height: 676px
     background-color: #EEEEEE
@@ -661,6 +661,79 @@ body
                     transform: scale(1.1)
                 &:active
                     transform: scale(0.925) 
-    &__request
+    .request
         width: 700px
-        background-color: #292D32 
+        background-color: #292D32
+        &__header
+            height: 89px
+            width: 473px
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            margin-bottom: 67.5px
+        &__title
+            font-weight: 400
+            font-size: 50px
+            line-height: 50px
+            color: #FFFFFF
+            margin-bottom: 17px
+        &__description
+            font-weight: 400
+            font-size: 16px
+            line-height: 150%
+            color: #FFFFFF
+        &__contant
+            height: 369.22px
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            margin-left: 129px
+            padding-top: 100px
+        &__field
+            display: flex
+            flex-direction: column
+            margin-bottom: 52.75px
+            position: relative
+        &__label
+            font-weight: 300
+            font-size: 18px
+            line-height: 24.06px
+            color: #F2F2F2
+            background-color: #292D32
+            border: 10px solid #292D32
+            z-index: 1
+            display: inline-block
+            width: fit-content
+            position: absolute
+            top: -20.5px
+            &--name
+                left: 13px
+                word-spacing: 1px
+            &--tel
+                left: 17px
+                word-spacing: 2px
+            &--comment
+                left: 17px
+                letter-spacing: 1px
+                letter-spacing: 0.2px
+        &__input
+            caret-color: rgba(242, 242, 242, 0.5)
+            caret-shape: rectangle
+            width: 434px
+            height: 59.25px
+            border: 1.5px solid rgba(242, 242, 242, 0.5)
+            border-radius: 20px
+            background: #f2f2f200
+            color: rgba(242, 242, 242, 0.8)
+            font-size: 23px
+            padding-left: 16px
+            &--comment
+                padding-top: 16px
+                height: 145.25px
+                display: flex
+                flex-wrap: wrap
+                resize: none
+                overflow: hidden
+                margin-bottom: 57px
+        .link__description
+            color: #FFFFFF

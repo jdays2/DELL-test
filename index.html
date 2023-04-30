@@ -589,10 +589,10 @@
         </div>
       </section>
 
-      <section class="form">
-        <div class="form__wrapper">
-          <div class="form__content">
-            <div class="form__contacts contacts">
+      <section class="about-us">
+        <div class="about-us__wrapper">
+          <div class="about-us__content">
+            <div class="about-us__contacts contacts">
               <div class="contacts__header">
                 <p class="contacts__title">Наши контакты</p>
                 <p class="contacts__description">
@@ -657,7 +657,49 @@
                   src="./assets/img/svg/form-whatsup-icon.svg" />
               </div>
             </div>
-            <div class="form__request"></div>
+            <div class="about-us__request request">
+              <form class="request__contant">
+                <div class="request__header">
+                  <p class="request__title">Оставьте заявку</p>
+                  <p class="request__description">
+                    Оставьте свой номер, и мы перезвоним Вам.
+                  </p>
+                </div>
+
+                <div class="request__field">
+                  <label class="request__label request__label--name">
+                    Ваше имя
+                  </label>
+                  <input class="request__input" type="text" />
+                </div>
+
+                <div class="request__field">
+                  <label class="request__label request__label--tel">
+                    Номер телефона
+                  </label>
+                  <input class="request__input" type="text" />
+                </div>
+
+                <div class="request__field">
+                  <label class="request__label request__label--comment">
+                    Комментарий
+                  </label>
+
+                  <textarea
+                    class="request__input request__input--comment"></textarea>
+
+                  <a class="link">
+                    <div class="link__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        class="link__button-img" />
+                    </div>
+
+                    <span class="link__description">Заказать</span>
+                  </a>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
