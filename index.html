@@ -24,54 +24,63 @@
         <div class="header__nav-bar">
           <ul class="nav">
             <li class="nav__item">
-              <a>ГЛАВНАЯ</a>
+              <a href="#">ГЛАВНАЯ</a>
             </li>
 
             <li class="nav__item">
-              <a>КАТАЛОГ</a>
+              <a href="#catalog">КАТАЛОГ</a>
             </li>
 
             <li class="nav__item">
-              <a>НОВОСТИ</a>
+              <a href="#news">НОВОСТИ</a>
             </li>
 
             <li class="nav__item">
-              <a>НАШ АСЦ</a>
+              <a href="#about-us">НАШ АСЦ</a>
             </li>
 
             <li class="nav__item">
-              <a>КОНТАКТЫ</a>
+              <a href="#footer">КОНТАКТЫ</a>
             </li>
 
             <li class="nav__item">
-              <img src="./assets/img/svg/find-icon.svg" />
+              <a href="#" class="nav__search">
+                <img src="./assets/img/svg/find-icon.svg" />
+              </a>
             </li>
           </ul>
 
           <ul class="nav-icons">
             <li class="nav-icons__item">
-              <img
-                src="./assets/img/svg/men-icon.svg"
-                class="nav-icons__icon nav-icons__icon--first" />
+              <a href="#" class="nav-icons__icon-wrapper">
+                <img
+                  src="./assets/img/svg/men-icon.svg"
+                  class="nav-icons__icon nav-icons__icon--first" />
+              </a>
             </li>
 
             <li class="nav-icons__item">
-              <img
-                src="./assets/img/svg/table-icon.svg"
-                class="nav-icons__icon nav-icons__icon--second" />
+              <a href="#" class="nav-icons__icon-wrapper">
+                <img
+                  src="./assets/img/svg/table-icon.svg"
+                  class="nav-icons__icon nav-icons__icon--second" />
+              </a>
             </li>
 
             <li class="nav-icons__item">
-              <img
-                src="./assets/img/png/heart-icon.png"
-                class="nav-icons__icon nav-icons__icon--therd" />
+              <a href="#" class="nav-icons__icon-wrapper">
+                <img
+                  src="./assets/img/png/heart-icon.png"
+                  class="nav-icons__icon nav-icons__icon--therd" />
+              </a>
             </li>
 
             <li class="nav-icons__item">
-              <img
-                src="./assets/img/svg/store-icon.svg"
-                class="nav-icons__icon nav-icons__icon--fourth" />
-
+              <a href="#" class="nav-icons__icon-wrapper">
+                <img
+                  src="./assets/img/svg/store-icon.svg"
+                  class="nav-icons__icon nav-icons__icon--fourth" />
+              </a>
               <span class="nav-icons__status-icon">3</span>
             </li>
           </ul>
@@ -80,7 +89,7 @@
     </header>
 
     <main>
-      <section class="slider">
+      <section class="slider" id="slider">
         <div class="slider__wrapper">
           <img
             src="./assets/img/png/dell-backgraund.png"
@@ -88,13 +97,13 @@
             alt="backgraund-DELL" />
 
           <div class="scroll">
-            <div class="scroll-wrapper">
+            <a href="#catalog" class="scroll-wrapper">
               <img
                 src="./assets/img/svg/slider-block-scroll.svg"
                 class="scroll__img"
                 alt="scroll-icon" />
               <p class="scroll__title">Scroll to catalog</p>
-            </div>
+            </a>
           </div>
 
           <div class="slider-block">
@@ -214,8 +223,8 @@
         </div>
       </section>
 
-      <section class="catalog" id="catalog">
-        <div class="catalog__wrapper">
+      <section class="catalog">
+        <div class="catalog__wrapper" id="catalog">
           <div class="catalog__description description">
             <p class="description__title">Каталог товаров от Dell</p>
 
@@ -648,14 +657,14 @@
         </div>
       </section>
 
-      <section class="about-us" id="about-us">
+      <section class="about-us">
         <div class="about-us__wrapper">
           <img
             class="about-us__backgraund"
             src="./assets/img/png/form-backgraund.png"
             alt="background-our
             contacts" />
-          <div class="about-us__content">
+          <div class="about-us__content" id="about-us">
             <div class="about-us__contacts contacts">
               <img
                 src="./assets/img/png/form-iphone-img.png"
