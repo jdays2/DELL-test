@@ -1,5 +1,9 @@
 @import "./reset"
 
+html
+    scroll-behavior: smooth
+
+
 body
     font-family: 'Roboto'
     font-weight: 400
@@ -9,6 +13,10 @@ body
     background: #969696
 
 .header
+    top: 0px
+    position: fixed
+    z-index: 4
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1)
     width: 100%
     background: #FFFFFF
     height: 123px
@@ -46,6 +54,16 @@ body
             justify-content: space-between
             align-items: center
             position: relative
+            &__icon--second
+                padding-left: 1px
+                padding-top: 1px
+            &__icon--therd
+                padding-top: 1px
+                padding-left: 1px
+                width: 25px
+            &__icon--fourth
+                margin-left: 2.92px
+                width: 22.09px
             &__item
                 background-color: #F9F9F9
                 width: 49px
@@ -62,9 +80,6 @@ body
                 border-radius: 50%
                 background-color: #48A4EB
                 color: #FFFFFF
-                display: flex
-                justify-content: center
-                align-items: center
                 
                 font-weight: 700
                 font-size: 12px
@@ -74,7 +89,11 @@ body
                 right: 0px
                 top: -1px
 
+                display: flex
+                align-items: center
+                justify-content: center
 .slider
+    margin-top: 123px
     width: 100%
     height: 683px
     background-color: #F2F2F2
@@ -147,19 +166,6 @@ body
                     line-height: 59px
                     color: #292D32
                     margin-bottom: 60px
-    
-    // @keyframes move-right
-    // 0%
-    //     left:-1080px  
-    // 100%
-    //     left:-2160px
-
-    // @keyframes move-left
-    //     0%
-    //         left:-1080px
-            
-    //     100%
-    //         left: 0px
 
     .controller
         display: flex
@@ -175,7 +181,7 @@ body
             border-radius: 50%
             background-color: #D0D0D0
             cursor: pointer
-            transition: 0.6s
+            transition: 0.3s
             &:hover
                 transform: scale(1.3)
                 background-color: #292d32a9
@@ -220,6 +226,9 @@ body
     height: 55px
     display: flex
     align-items: center
+    z-index: 3
+    background: inherit
+    border: 0px
     &__button
         width: 55px
         height: 55px
@@ -274,6 +283,8 @@ body
         position: relative
         transition: 0.2s
         cursor: pointer
+        &--brighter
+            background-color: #F9F9F9
         &:hover
             transform: scale(1.02)
             -webkit-box-shadow: 4px -1px 8px -2px rgba(34, 60, 80, 0.31)
@@ -377,10 +388,12 @@ body
         .card
             width: 330px
             height: 289px
-            background: #292D32
+            background-color: #292D32
             border-radius: 20px
             position: relative
             font-family: 'Euclid Circular A'
+            &:hover
+                background-color: #17191c
             &__backgraund-img
                 position: absolute
                 right: 0px
@@ -429,11 +442,11 @@ body
 .news
     background: #F5F5F5
     width: 100%
-    height: 1719px
     &__wrapper
         width: 1401px
         margin: 0 auto
         padding-top: 177px
+        padding-bottom: 526px
     &__description
         display: flex
         justify-content: space-between
@@ -459,12 +472,47 @@ body
         flex-wrap: wrap
         .card
             font-family: "Roboto"
-            width: 415px
-            height: 365px
-            background-image: url("./assets/png/news-backgraund-1.png")
-            overflow: hidden
             position: relative
-            border-radius: 45px 0px 0px 0px
+            filter: drop-shadow(0px 40px 80px rgba(0, 0, 0, 0.05))
+            &__wrapper
+                width: 415px
+                height: 365px
+                background-image: url("./assets/png/news-backgraund-1.png")
+                position: relative
+                border-radius: 45px 0px 0px 0px
+                transition: box-shadow 0.3s ease-in-out
+                overflow: hidden
+            &__date
+                overflow: visible
+                top: 65px
+                right: -25px
+                position: absolute
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                z-index: 3
+                width: 50px
+                height: 97px
+                background-color: #FFFFFF
+                border-radius: 15px
+                box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.06)
+                -webkit-box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.06)
+                -moz-box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.06)
+            &__day
+                text-align: center
+                font-weight: 900
+                font-size: 20px
+                line-height: 23px
+                color: #292D32
+                margin-bottom: 3px
+            &__month
+                text-align: center
+                font-weight: 500
+                font-size: 10px
+                padding-top: 6px
+                line-height: 16px
+                color: #292D32
             &__backgraund-img
                 width: 415px
                 height: 259px
@@ -474,7 +522,6 @@ body
                 &:hover
                     transform: scale(1.1)
             &__img-part-one
-                border: 1px solid red
                 top: 219px
                 width:415px
                 height: 146px
@@ -482,9 +529,8 @@ body
                 z-index: 1
             &__img-part-two
                 right: 11.91px
-                 border: 1px solid red
                 width: 95.09px
-                height: 35.21px
+                height: 36.21px
                 top: 242.5px
                 z-index: 2
                 position: absolute
@@ -525,3 +571,315 @@ body
                 font-size: 14px
                 line-height: 21px
                 color: #292D32
+
+.about-us
+    width: 100%
+    height: 676px
+    background-color: #EEEEEE
+    &__wrapper
+        width: 1920px
+        margin: 0 auto
+        position: relative
+    &__backgraund
+        position: absolute
+        left: 11px
+        top: 199px
+    &__content
+        width: 1400px
+        margin: 0 auto
+        border-radius: 20px
+        position: absolute
+        display: flex
+        height: 842px
+        overflow: hidden
+        top: -346px
+        left: 0px
+        right: 0px
+    &__contacts
+        height: 842px
+        width: 700px
+        background-color: #F9F9F9
+    .contacts
+        padding-top: 100px
+        padding-left: 100px
+        &__decoration-img
+            height: 590.13px
+            top: 141.32px
+            left: 492px
+            position: absolute
+        &__header
+            height: 91px
+            width: 473px
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            margin-bottom: 47.17px
+        &__title
+            font-weight: 400
+            font-size: 50px
+            line-height: 50px
+            color: #292D32
+        &__description
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            color: #838383
+        &__list
+            width: 413px
+            height: 393px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin-bottom: 61px
+            .item
+                width: 410px
+                height: 103px
+                &--email
+                    .item__info
+                        margin-top: 1px
+                        padding-left: 57px
+                &__wrapper
+                    display: flex
+                    align-items: center
+                    &--email
+                        padding-top:2px    
+                &__icon-wrapper
+                    height: 38px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    transition: 0.4s
+                    &:hover
+                        transform: scale(1.1)
+                    &:active
+                        transform: scale(0.925)
+                    &--location
+                        padding-top: 2px
+                        padding-left: 1px
+                        margin-right: 17px
+                    &--mail
+                        padding-top: 5px
+                        padding-left: 2px
+                        margin-right: 18px
+                    &--tel
+                        padding-top: 0px
+                        padding-left: 2px
+                        margin-right: 18px
+
+                &__icon
+                    &:hover
+                        transform: scale(1.1)
+                &__title
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 24px
+                    color: #838383
+                &__info
+                    padding-top:0px
+                    padding-left: 56px
+                    font-weight: 400
+                    font-size: 22px
+                    line-height: 33px
+                    color: #292D32
+        .social
+            width: 93.71px
+            height: 37.71px
+            display: flex
+            justify-content: space-between
+            margin-left: 3.9px
+            &__icon
+                transition: 0.4s
+                height: 37.71px
+                cursor: pointer
+                &:hover
+                    transform: scale(1.1)
+                &:active
+                    transform: scale(0.925) 
+    .request
+        width: 700px
+        background-color: #292D32
+        &__header
+            height: 89px
+            width: 473px
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            margin-bottom: 67.5px
+        &__title
+            font-weight: 400
+            font-size: 50px
+            line-height: 50px
+            color: #FFFFFF
+            margin-bottom: 17px
+        &__description
+            font-weight: 400
+            font-size: 16px
+            line-height: 150%
+            color: #FFFFFF
+        &__content
+            height: 369.22px
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            margin-left: 129px
+            padding-top: 100px
+        &__field
+            display: flex
+            flex-direction: column
+            margin-bottom: 52.75px
+            position: relative
+        &__label
+            font-weight: 300
+            font-size: 18px
+            line-height: 24.06px
+            color: #F2F2F2
+            background-color: #292D32
+            border: 10px solid #292D32
+            border-bottom: 0px
+            z-index: 1
+            display: inline-block
+            width: fit-content
+            position: absolute
+            top: -20.5px
+            &--name
+                left: 13px
+                word-spacing: 1px
+            &--tel
+                left: 17px
+                word-spacing: 2px
+            &--comment
+                left: 17px
+                letter-spacing: 1px
+                letter-spacing: 0.2px
+                
+        &__input
+            caret-color: rgba(242, 242, 242, 0.5)
+            width: 434px
+            height: 59.25px
+            border: 1.5px solid rgba(242, 242, 242, 0.5)
+            border-radius: 20px
+            background: #f2f2f200
+            color: rgba(242, 242, 242, 0.8)
+            font-size: 23px
+            padding-left: 16px
+            &--error
+                border: 2px solid rgba(255, 75, 75, 0.5)
+            &--correct
+                border: 2px solid rgba(2, 207, 9, 0.5)
+            &--comment
+                padding-top: 16px
+                height: 145.25px
+                display: flex
+                flex-wrap: wrap
+                resize: none
+                overflow: hidden
+                margin-bottom: 57px
+        .link__description
+            color: #FFFFFF
+
+.footer
+    width: 100%
+    background-color: #FFFFFF
+    height: 438px
+    // &__wrapper
+    //     background-color: #FFFFFF
+    //     width: 1920px
+    //     margin: 0 auto
+    &__content
+        width: 1400px
+        margin: 0 auto
+        background-color: #FFFFFF
+        display: flex
+        flex-direction: column
+    &__logo
+        height: 112px
+        margin-top: 29px
+        padding-right: 10px
+        cursor: pointer
+    .nav
+        display: flex
+        gap: 180px
+        margin-top: 59px
+        padding-bottom: 60px
+        border-bottom: 1px solid #E5E5E5
+        &__list-wrapper
+            display: flex
+            flex-direction: column
+            &--second
+                padding-left: 5px
+        &__list-title
+            font-weight: 400
+            font-size: 25px
+            line-height: 29px
+            color: #292D32
+            margin-bottom: 15px
+            &--first
+                padding-left: 1px
+            &--third
+                padding-left: 1px
+        &__list
+            display: flex
+            flex-direction: column
+            gap: 10px
+        &__item
+            cursor: pointer
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px   
+            color: #292D32
+            letter-spacing: 0.19px
+            &:hover
+                color: #000000
+                transform: scale(1.05)
+    .contact-us
+        margin: 0 auto
+        width: 100%
+        height: 139px
+        &__item
+            height: 59px
+            display: flex
+            flex-direction: column
+            &--first
+                margin-right: 154px
+            &--second
+                margin-right: 153.26px
+            &--third
+                margin-right: 153.74px
+                .contact-us__title
+                    margin-top: -6px
+                    margin-bottom: 12px
+        &__title
+            font-weight: 400
+            font-size: 16px
+            line-height: 21px
+            color: #838383
+            margin-bottom: 11px
+        &__description
+            font-weight: 400
+            font-size: 18px
+            line-height: 27px
+            cursor: pointer
+            &:hover
+                font-weight: 600
+        &__list
+            margin-top: 40px
+            width: 100%
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            .social
+                margin-top: 7px
+                width: 92.71px
+                height: 37.71px
+                display: flex
+                justify-content: space-between
+                &__icon
+                    transition: 0.4s
+                    &:hover
+                        transform: scale(1.1)
+                    &:active
+                        transform: scale(0.925) 
+                &__icon:last-child
+                    margin-right:-2px

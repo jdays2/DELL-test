@@ -24,58 +24,66 @@
         <div class="header__nav-bar">
           <ul class="nav">
             <li class="nav__item">
-              <a>ГЛАВНАЯ</a>
+              <a href="#" class="nav__link">ГЛАВНАЯ</a>
             </li>
 
             <li class="nav__item">
-              <a>КАТАЛОГ</a>
+              <a href="#catalog" class="nav__link">КАТАЛОГ</a>
             </li>
 
             <li class="nav__item">
-              <a>НОВОСТИ</a>
+              <a href="#news" class="nav__link">НОВОСТИ</a>
             </li>
 
             <li class="nav__item">
-              <a>НАШ АСЦ</a>
+              <a href="#about-us" class="nav__link">НАШ АСЦ</a>
             </li>
 
             <li class="nav__item">
-              <a>КОНТАКТЫ</a>
+              <a href="#footer" class="nav__link">КОНТАКТЫ</a>
             </li>
 
             <li class="nav__item">
-              <img src="./assets/img/svg/find-icon.svg" />
+              <a href="#" class="nav__search">
+                <img src="./assets/img/svg/find-icon.svg" />
+              </a>
             </li>
           </ul>
 
           <ul class="nav-icons">
             <li class="nav-icons__item">
-              <img
-                src="./assets/img/svg/men-icon.svg"
-                class="nav-icons__icon" />
+              <a href="#" class="nav-icons__icon-wrapper">
+                <img
+                  src="./assets/img/svg/men-icon.svg"
+                  class="nav-icons__icon nav-icons__icon--first" />
+              </a>
             </li>
 
             <li class="nav-icons__item">
-              <img
-                src="./assets/img/svg/table-icon.svg"
-                class="nav-icons__icon" />
+              <a href="#" class="nav-icons__icon-wrapper">
+                <img
+                  src="./assets/img/svg/table-icon.svg"
+                  class="nav-icons__icon nav-icons__icon--second" />
+              </a>
             </li>
 
             <li class="nav-icons__item">
-              <img
-                src="./assets/img/png/heart-icon.png"
-                class="nav-icons__icon"
-                width="24.01" />
+              <a href="#" class="nav-icons__icon-wrapper">
+                <img
+                  src="./assets/img/png/heart-icon.png"
+                  class="nav-icons__icon nav-icons__icon--therd" />
+              </a>
             </li>
 
             <li class="nav-icons__item">
-              <img
-                src="./assets/img/svg/store-icon.svg"
-                class="nav-icons__icon"
-                height="24"
-                width="24" />
-
-              <span class="nav-icons__status-icon">3</span>
+              <a href="#" class="nav-icons__icon-wrapper">
+                <img
+                  src="./assets/img/svg/store-icon.svg"
+                  class="nav-icons__icon nav-icons__icon--fourth" />
+              </a>
+              <div class="nav-icons__status-icon">
+                <span class="nav-icons__value">3</span>
+              </div>
             </li>
           </ul>
         </div>
@@ -83,19 +91,21 @@
     </header>
 
     <main>
-      <section class="slider">
+      <section class="slider" id="slider">
         <div class="slider__wrapper">
           <img
             src="./assets/img/png/dell-backgraund.png"
-            class="slider__dell-backgraund" />
+            class="slider__dell-backgraund"
+            alt="backgraund-DELL" />
 
           <div class="scroll">
-            <div class="scroll-wrapper">
+            <a href="#catalog" class="scroll-wrapper">
               <img
                 src="./assets/img/svg/slider-block-scroll.svg"
-                class="scroll__img" />
+                class="scroll__img"
+                alt="scroll-icon" />
               <p class="scroll__title">Scroll to catalog</p>
-            </div>
+            </a>
           </div>
 
           <div class="slider-block">
@@ -109,7 +119,8 @@
                     <div class="link__button">
                       <img
                         src="./assets/img/svg/link-button-arrow.svg"
-                        class="link__button-img" />
+                        class="link__button-img"
+                        alt="button-arrow-icon" />
                     </div>
 
                     <span class="link__description">Побробнее</span>
@@ -127,7 +138,8 @@
 
                 <img
                   src="./assets/img/png/slider-img-first.png"
-                  class="card__img" />
+                  class="card__img"
+                  alt="slider-img-first" />
               </div>
               <div class="card">
                 <div class="card__wrapper">
@@ -138,7 +150,8 @@
                     <div class="link__button">
                       <img
                         src="./assets/img/svg/link-button-arrow.svg"
-                        class="link__button-img" />
+                        class="link__button-img"
+                        alt="button-arrow-icon" />
                     </div>
 
                     <span class="link__description">Побробнее</span>
@@ -156,7 +169,8 @@
 
                 <img
                   src="./assets/img/png/slider-img-first.png"
-                  class="card__img" />
+                  class="card__img"
+                  alt="slider-img" />
               </div>
 
               <div class="card">
@@ -168,7 +182,8 @@
                     <div class="link__button">
                       <img
                         src="./assets/img/svg/link-button-arrow.svg"
-                        class="link__button-img" />
+                        class="link__button-img"
+                        alt="button-arrow-icon" />
                     </div>
 
                     <span class="link__description">Побробнее</span>
@@ -186,7 +201,8 @@
 
                 <img
                   src="./assets/img/png/slider-img-first.png"
-                  class="card__img" />
+                  class="card__img"
+                  alt="slider-img" />
               </div>
             </div>
           </div>
@@ -195,20 +211,22 @@
             <a class="profitable-offer__wrapper">
               <img
                 src="./assets/img/png/dell-offer.png"
-                class="profitable-offer__img" />
+                class="profitable-offer__img"
+                alt="backgraund-pc-img" />
               <span class="profitable-offer__title">
                 Выгодное предложение от Dell
               </span>
               <img
                 src="./assets/img/svg/dell-offer-arrow.svg"
-                class="profitable-offer__arrow-icon" />
+                class="profitable-offer__arrow-icon"
+                alt="next-block-arrow-icon" />
             </a>
           </aside>
         </div>
       </section>
 
       <section class="catalog">
-        <div class="catalog__wrapper">
+        <div class="catalog__wrapper" id="catalog">
           <div class="catalog__description description">
             <p class="description__title">Каталог товаров от Dell</p>
 
@@ -220,7 +238,8 @@
               <div class="link__button">
                 <img
                   src="./assets/img/svg/link-button-arrow.svg"
-                  class="link__button-img" />
+                  class="link__button-img"
+                  alt="button-arrow-icon" />
               </div>
 
               <span class="link__description">В каталог</span>
@@ -231,18 +250,22 @@
             <span class="card__number">01</span>
             <img
               src="./assets/img/png/catalog-1.png"
-              class="card__img card__img--first" />
+              class="card__img card__img--first"
+              alt="card-item-img" />
+
             <div class="card__description">
               <p class="card__quantity">105 товаров</p>
               <p class="card__title">Ноутбуки</p>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card card--brighter">
             <span class="card__number">02</span>
             <img
               src="./assets/img/png/catalog-2.png"
-              class="card__img card__img--second" />
+              class="card__img card__img--second"
+              alt="card-item-img" />
+
             <div class="card__description">
               <p class="card__quantity">65 товаров</p>
               <p class="card__title">Персональные компьютеры</p>
@@ -253,18 +276,22 @@
             <span class="card__number">03</span>
             <img
               src="./assets/img/png/catalog-3.png"
-              class="card__img card__img--third" />
+              class="card__img card__img--third"
+              alt="card-item-img" />
+
             <div class="card__description">
               <p class="card__quantity">13 товаров</p>
               <p class="card__title">Cерверы</p>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card card--brighter">
             <span class="card__number">04</span>
             <img
               src="./assets/img/png/catalog-4.png"
-              class="card__img card__img--fourth" />
+              class="card__img card__img--fourth"
+              alt="card-item-img" />
+
             <div class="card__description">
               <p class="card__quantity">2345 товаров</p>
               <p class="card__title">Dell EMC</p>
@@ -275,7 +302,8 @@
             <span class="card__number">05</span>
             <img
               src="./assets/img/png/catalog-5.png"
-              class="card__img card__img--fifth" />
+              class="card__img card__img--fifth"
+              alt="card-item-img" />
             <div class="card__description">
               <p class="card__quantity">195 товаров</p>
               <p class="card__title">Запасные части к Dell EMC</p>
@@ -284,15 +312,17 @@
         </div>
       </section>
 
-      <section class="benefits">
+      <section class="benefits" id="benefits">
         <div class="benefits__wrapper">
           <img
             src="./assets/img/png/best-quality-backgraund.png"
-            class="benefits__best-quelity-backgraund" />
+            class="benefits__best-quelity-backgraund"
+            alt="backgraund-best-quality" />
           <div class="benefits__exposition">
             <img
               src="./assets/img/png/benefits-img.png"
-              class="benefits__img" />
+              class="benefits__img"
+              alt="pc-img" />
             <div class="benefits__description description">
               <p class="description__title">Наши преимущества</p>
 
@@ -301,11 +331,12 @@
                 позволили компании на 4,7% понизить цены по сравнению
                 с конкурентами.
               </p>
-              <a class="link">
+              <a href="#about-us" class="link">
                 <div class="link__button">
                   <img
                     src="./assets/img/svg/link-button-arrow.svg"
-                    class="link__button-img" />
+                    class="link__button-img"
+                    alt="button-arrow-icon" />
                 </div>
 
                 <span class="link__description">Оставить заявку</span>
@@ -317,11 +348,13 @@
             <div class="card">
               <img
                 src="./assets/img/svg/background-vector.svg"
-                class="card__backgraund-img" />
+                class="card__backgraund-img"
+                alt="card-background-element" />
               <div class="card__icon-wrapper">
                 <img
                   src="./assets/img/svg/benefits-card.svg"
-                  class="card__icon" />
+                  class="card__icon"
+                  alt="card-icon" />
               </div>
               <p class="card__title card__title--first">
                 Самые выгодные и низкие цены
@@ -336,11 +369,13 @@
             <div class="card">
               <img
                 src="./assets/img/svg/background-vector.svg"
-                class="card__backgraund-img" />
+                class="card__backgraund-img"
+                alt="card-background-element" />
               <div class="card__icon-wrapper">
                 <img
                   src="./assets/img/svg/benefits-done.svg"
-                  class="card__icon" />
+                  class="card__icon"
+                  alt="done-icon" />
               </div>
               <p class="card__title">Авторизованный сервисный центр DELL</p>
               <p class="card__description">
@@ -352,11 +387,13 @@
             <div class="card">
               <img
                 src="./assets/img/svg/background-vector.svg"
-                class="card__backgraund-img card__backgraund-img--third" />
+                class="card__backgraund-img card__backgraund-img--third"
+                alt="card-background-element" />
               <div class="card__icon-wrapper">
                 <img
                   src="./assets/img/svg/benefits-experts.svg"
-                  class="card__icon" />
+                  class="card__icon"
+                  alt="experts-icon" />
               </div>
               <p class="card__title">Высокий уровень технической экспертизы</p>
               <p class="card__description">
@@ -368,11 +405,13 @@
             <div class="card">
               <img
                 src="./assets/img/svg/background-vector.svg"
-                class="card__backgraund-img card__backgraund-img--fourth" />
+                class="card__backgraund-img card__backgraund-img--fourth"
+                alt="card-background-element" />
               <div class="card__icon-wrapper">
                 <img
                   src="./assets/img/svg/benefits-box.svg"
-                  class="card__icon" />
+                  class="card__icon"
+                  alt="box-icon" />
               </div>
               <p class="card__title">Официальный партнер DELL</p>
               <p class="card__description card__description--fourth">
@@ -383,7 +422,7 @@
         </div>
       </section>
 
-      <section class="news">
+      <section class="news" id="news">
         <div class="news__wrapper">
           <div class="news__description description">
             <div class="description__wrapper">
@@ -394,158 +433,495 @@
                 последних новинках, перейдя по кнопке
               </p>
             </div>
-            <a class="link">
+            <a href="" class="link">
               <span class="link__description">Все новости</span>
               <div class="link__button">
                 <img
                   src="./assets/img/svg/link-button-arrow.svg"
-                  class="link__button-img" />
+                  class="link__button-img"
+                  alt="button-arrow-icon" />
               </div>
             </a>
           </div>
 
           <div class="news__cards">
             <div class="card">
-              <img
-                src="./assets/img/png/news-backgraund-1.png"
-                class="card__backgraund-img" />
-              <img
-                src="./assets/img/svg/news-img-part1.svg"
-                class="card__img-part-one" />
-              <img
-                src="./assets/img/svg/news-img-part2.svg"
-                class="card__img-part-two" />
+              <div class="card__date">
+                <span class="card__day">11</span>
+                <span class="card__month">июля</span>
+              </div>
+              <div class="card__wrapper">
+                <img
+                  src="./assets/img/png/news-backgraund-1.png"
+                  class="card__backgraund-img"
+                  alt="card-backgraund" />
+                <img
+                  src="./assets/img/svg/news-img-part1.svg"
+                  class="card__img-part-one"
+                  alt="geometric-backgraund-1" />
+                <img
+                  src="./assets/img/svg/news-img-part2.svg"
+                  class="card__img-part-two"
+                  alt="geometric-backgraund-2" />
 
-              <div class="card__content">
-                <div class="card__title-wrapper">
-                  <p class="card__title">GE использует технологии Dell</p>
-                  <button class="card__button">
-                    <img src="./assets/img/svg/link-button-arrow.svg" />
-                  </button>
+                <div class="card__content">
+                  <div class="card__title-wrapper">
+                    <p class="card__title">GE использует технологии Dell</p>
+                    <button class="card__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        alt="button-arrow-icon" />
+                    </button>
+                  </div>
+                  <p class="card__description">
+                    Вы можете посмотреть ещё больше интересных
+                  </p>
                 </div>
-                <p class="card__description">
-                  Вы можете посмотреть ещё больше интересных
-                </p>
               </div>
             </div>
-            <div class="card">
-              <img
-                src="./assets/img/png/news-backgraund-2.png"
-                class="card__backgraund-img" />
-              <img
-                src="./assets/img/svg/news-img-part1.svg"
-                class="card__img-part-one" />
-              <img
-                src="./assets/img/svg/news-img-part2.svg"
-                class="card__img-part-two" />
 
-              <div class="card__content">
-                <div class="card__title-wrapper">
-                  <p class="card__title">GE использует технологии Dell</p>
-                  <button class="card__button">
-                    <img src="./assets/img/svg/link-button-arrow.svg" />
-                  </button>
+            <div class="card">
+              <div class="card__date">
+                <span class="card__day">11</span>
+                <span class="card__month">июля</span>
+              </div>
+
+              <div class="card__wrapper">
+                <img
+                  src="./assets/img/png/news-backgraund-2.png"
+                  class="card__backgraund-img"
+                  alt="card-backgraund" />
+                <img
+                  src="./assets/img/svg/news-img-part1.svg"
+                  class="card__img-part-one"
+                  alt="geometric-backgraund-1" />
+                <img
+                  src="./assets/img/svg/news-img-part2.svg"
+                  alt="geometric-backgraund-2"
+                  class="card__img-part-two" />
+
+                <div class="card__content">
+                  <div class="card__title-wrapper">
+                    <p class="card__title">GE использует технологии Dell</p>
+                    <button class="card__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        alt="button-arrow-icon" />
+                    </button>
+                  </div>
+                  <p class="card__description">
+                    Вы можете посмотреть ещё больше интересных
+                  </p>
                 </div>
-                <p class="card__description">
-                  Вы можете посмотреть ещё больше интересных
-                </p>
               </div>
             </div>
-            <div class="card">
-              <img
-                src="./assets/img/png/news-backgraund-3.png"
-                class="card__backgraund-img" />
-              <img
-                src="./assets/img/svg/news-img-part1.svg"
-                class="card__img-part-one" />
-              <img
-                src="./assets/img/svg/news-img-part2.svg"
-                class="card__img-part-two" />
 
-              <div class="card__content">
-                <div class="card__title-wrapper">
-                  <p class="card__title">GE использует технологии Dell</p>
-                  <button class="card__button">
-                    <img src="./assets/img/svg/link-button-arrow.svg" />
-                  </button>
+            <div class="card">
+              <div class="card__date">
+                <span class="card__day">11</span>
+                <span class="card__month">июля</span>
+              </div>
+
+              <div class="card__wrapper">
+                <img
+                  src="./assets/img/png/news-backgraund-3.png"
+                  class="card__backgraund-img"
+                  alt="card-backgraund" />
+                <img
+                  src="./assets/img/svg/news-img-part1.svg"
+                  class="card__img-part-one"
+                  alt="geometric-backgraund-1" />
+                <img
+                  src="./assets/img/svg/news-img-part2.svg"
+                  class="card__img-part-two"
+                  alt="geometric-backgraund-2" />
+
+                <div class="card__content">
+                  <div class="card__title-wrapper">
+                    <p class="card__title">GE использует технологии Dell</p>
+                    <button class="card__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        alt="button-arrow-icon" />
+                    </button>
+                  </div>
+                  <p class="card__description">
+                    Вы можете посмотреть ещё больше интересных
+                  </p>
                 </div>
-                <p class="card__description">
-                  Вы можете посмотреть ещё больше интересных
-                </p>
               </div>
             </div>
-            <div class="card">
-              <img
-                src="./assets/img/png/news-backgraund-4.png"
-                class="card__backgraund-img" />
-              <img
-                src="./assets/img/svg/news-img-part1.svg"
-                class="card__img-part-one" />
-              <img
-                src="./assets/img/svg/news-img-part2.svg"
-                class="card__img-part-two" />
 
-              <div class="card__content">
-                <div class="card__title-wrapper">
-                  <p class="card__title">GE использует технологии Dell</p>
-                  <button class="card__button">
-                    <img src="./assets/img/svg/link-button-arrow.svg" />
-                  </button>
+            <div class="card">
+              <div class="card__date">
+                <span class="card__day">11</span>
+                <span class="card__month">июля</span>
+              </div>
+              <div class="card__wrapper">
+                <img
+                  src="./assets/img/png/news-backgraund-4.png"
+                  class="card__backgraund-img"
+                  alt="card-backgraund" />
+                <img
+                  src="./assets/img/svg/news-img-part1.svg"
+                  class="card__img-part-one"
+                  alt="geometric-backgraund-1" />
+                <img
+                  src="./assets/img/svg/news-img-part2.svg"
+                  class="card__img-part-two"
+                  alt="geometric-backgraund-2" />
+
+                <div class="card__content">
+                  <div class="card__title-wrapper">
+                    <p class="card__title">GE использует технологии Dell</p>
+                    <button class="card__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        alt="button-arrow-icon" />
+                    </button>
+                  </div>
+                  <p class="card__description">
+                    Вы можете посмотреть ещё больше интересных
+                  </p>
                 </div>
-                <p class="card__description">
-                  Вы можете посмотреть ещё больше интересных
-                </p>
               </div>
             </div>
-            <div class="card">
-              <img
-                src="./assets/img/png/news-backgraund-5.png"
-                class="card__backgraund-img" />
-              <img
-                src="./assets/img/svg/news-img-part1.svg"
-                class="card__img-part-one" />
-              <img
-                src="./assets/img/svg/news-img-part2.svg"
-                class="card__img-part-two" />
 
-              <div class="card__content">
-                <div class="card__title-wrapper">
-                  <p class="card__title">GE использует технологии Dell</p>
-                  <button class="card__button">
-                    <img src="./assets/img/svg/link-button-arrow.svg" />
-                  </button>
+            <div class="card">
+              <div class="card__date">
+                <span class="card__day">11</span>
+                <span class="card__month">июля</span>
+              </div>
+              <div class="card__wrapper">
+                <img
+                  src="./assets/img/png/news-backgraund-5.png"
+                  class="card__backgraund-img"
+                  alt="card-backgraund" />
+                <img
+                  src="./assets/img/svg/news-img-part1.svg"
+                  class="card__img-part-one"
+                  alt="geometric-backgraund-1" />
+                <img
+                  src="./assets/img/svg/news-img-part2.svg"
+                  class="card__img-part-two"
+                  alt="geometric-backgraund-2" />
+
+                <div class="card__content">
+                  <div class="card__title-wrapper">
+                    <p class="card__title">GE использует технологии Dell</p>
+                    <button class="card__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        alt="button-arrow-icon" />
+                    </button>
+                  </div>
+                  <p class="card__description">
+                    Вы можете посмотреть ещё больше интересных
+                  </p>
                 </div>
-                <p class="card__description">
-                  Вы можете посмотреть ещё больше интересных
-                </p>
               </div>
             </div>
-            <div class="card">
-              <img
-                src="./assets/img/png/news-backgraund-6.png"
-                class="card__backgraund-img" />
-              <img
-                src="./assets/img/svg/news-img-part1.svg"
-                class="card__img-part-one" />
-              <img
-                src="./assets/img/svg/news-img-part2.svg"
-                class="card__img-part-two" />
 
-              <div class="card__content">
-                <div class="card__title-wrapper">
-                  <p class="card__title">GE использует технологии Dell</p>
-                  <button class="card__button">
-                    <img src="./assets/img/svg/link-button-arrow.svg" />
-                  </button>
+            <div class="card">
+              <div class="card__date">
+                <span class="card__day">11</span>
+                <span class="card__month">июня</span>
+              </div>
+              <div class="card__wrapper">
+                <img
+                  src="./assets/img/png/news-backgraund-6.png"
+                  class="card__backgraund-img"
+                  alt="card-backgraund" />
+                <img
+                  src="./assets/img/svg/news-img-part1.svg"
+                  class="card__img-part-one"
+                  alt="geometric-backgraund-1" />
+                <img
+                  src="./assets/img/svg/news-img-part2.svg"
+                  class="card__img-part-two"
+                  alt="geometric-backgraund-2" />
+                <div class="card__content">
+                  <div class="card__title-wrapper">
+                    <p class="card__title">GE использует технологии Dell</p>
+                    <button class="card__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        alt="button-arrow-icon" />
+                    </button>
+                  </div>
+                  <p class="card__description">
+                    Вы можете посмотреть ещё больше интересных
+                  </p>
                 </div>
-                <p class="card__description">
-                  Вы можете посмотреть ещё больше интересных
-                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="about-us">
+        <div class="about-us__wrapper">
+          <img
+            class="about-us__backgraund"
+            src="./assets/img/png/form-backgraund.png"
+            alt="background-our
+            contacts" />
+          <div class="about-us__content" id="about-us">
+            <div class="about-us__contacts contacts">
+              <img
+                src="./assets/img/png/form-iphone-img.png"
+                class="contacts__decoration-img"
+                alt="iphone-img" />
+              <div class="contacts__header">
+                <p class="contacts__title">Наши контакты</p>
+                <p class="contacts__description">
+                  Dы можете связаться с нашим онлайн-консультантом
+                </p>
+              </div>
+
+              <ul class="contacts__list">
+                <li class="contacts__item item">
+                  <div class="item__wrapper">
+                    <a
+                      href="https://www.google.com/maps/place/%D0%91%D1%80%D0%B5%D1%81%D1%82/@52.0774685,
+                      23.7270421,16.25z/data=!4m6!3m5!1s0x47210c0223630975:0x4d319ea41f64ae99!8m2!3d52.0996507!4d23.7636662!16zL20vMDE1anNt"
+                      class="item__icon-wrapper item__icon-wrapper--location">
+                      <img
+                        class="item__icon"
+                        src="./assets/img/svg/form-location-icon.svg"
+                        alt="location-icon" />
+                    </a>
+                    <p class="item__title">Адрес</p>
+                  </div>
+                  <p class="item__info">
+                    Москва, ул. 3-я Хорошевская, дом 2, строение 1
+                  </p>
+                </li>
+
+                <li class="contacts__item item item--email">
+                  <div class="item__wrapper item__wrapper--email">
+                    <a
+                      href="mailto: markgorsharik@mail.com"
+                      class="item__icon-wrapper">
+                      <img
+                        class="item__icon item__icon-wrapper--mail"
+                        src="./assets/img/svg/form-email-icon.svg"
+                        alt="mail-icon" />
+                    </a>
+                    <p class="item__title">E-mail</p>
+                  </div>
+                  <p class="item__info">dell_ru@gmail.com</p>
+                </li>
+
+                <li class="contacts__item item">
+                  <div class="item__wrapper">
+                    <a href="tel: +375336862774" class="item__icon-wrapper">
+                      <img
+                        class="item__icon item__icon-wrapper--tel"
+                        src="./assets/img/svg/form-tel-icon.svg"
+                        alt="telephone-icon" />
+                    </a>
+                    <p class="item__title">Телефон</p>
+                  </div>
+                  <p class="item__info">
+                    +7 495 737-06-01
+                    <br />
+                    +7 495 737-06-01
+                  </p>
+                </li>
+              </ul>
+              <div class="social">
+                <a
+                  href="https://www.facebook.com/MoldovaUSALinkSystem
+                  /photos/a.1255904651090910/5338404039507597/">
+                  <img
+                    class="social__icon"
+                    src="./assets/img/svg/form-facebook-icon.svg"
+                    alt="facebook-icon" />
+                </a>
+                <a href="https://www.whatsapp.com/">
+                  <img
+                    class="social__icon"
+                    src="./assets/img/svg/form-whatsup-icon.svg"
+                    alt="whatsapp-icon" />
+                </a>
+              </div>
+            </div>
+            <div class="about-us__request request">
+              <form class="request__content" id="request-form">
+                <div class="request__header">
+                  <p class="request__title">Оставьте заявку</p>
+                  <p class="request__description">
+                    Оставьте свой номер, и мы перезвоним Вам.
+                  </p>
+                </div>
+
+                <div class="request__field">
+                  <label class="request__label request__label--name">
+                    Ваше имя
+                  </label>
+                  <input
+                    class="request__input request__input--name"
+                    type="text" />
+                </div>
+
+                <div class="request__field">
+                  <label class="request__label request__label--tel">
+                    Номер телефона
+                  </label>
+                  <input
+                    class="request__input request__input--tel"
+                    type="text" />
+                </div>
+
+                <div class="request__field">
+                  <label class="request__label request__label--comment">
+                    Комментарий
+                  </label>
+
+                  <textarea
+                    class="request__input request__input--comment"></textarea>
+
+                  <button class="link" form="request-form" id="#submit-button">
+                    <div class="link__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        class="link__button-img"
+                        alt="button-arrow-icon" />
+                    </div>
+
+                    <span class="link__description">Заказать</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <nav class="footer__nav nav">
+            <a href="#" class="footer__logo-wrapper">
+              <img
+                src="./assets/img/svg/footer-logo.svg"
+                class="footer__logo"
+                alt="footer-logo" />
+            </a>
+            <div class="nav__list-wrapper">
+              <p class="nav__list-title nav__list-title--first">Каталог</p>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="" class="nav__link">Ноутбуки</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Персональные компьютеры</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Серверы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Dell EMC</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Запасные части к Dell EMC</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav__list-wrapper nav__list-wrapper--second">
+              <p class="nav__list-title">Личный кабинет</p>
+              <ul class="nav__list nav__list--second">
+                <li class="nav__item">
+                  <a href="" class="nav__link">Профиль</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">История заказов</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">SMS-уведомления</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Избранное</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Сравнение товаров</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav__list-wrapper">
+              <p class="nav__list-title nav__list-title--third">Помощь</p>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="" class="nav__link">Доставка и оплата</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Контакты</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">FAQ</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Наш АСЦ</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <nav class="footer__contact-us contact-us">
+            <ul class="contact-us__list">
+              <li class="contact-us__item contact-us__item--first">
+                <p class="contact-us__title">Адрес</p>
+                <a
+                  href="https://www.google.com/maps/place/%D0%91%D1%80%D0%B5%D1%81%D1%82/
+                  @52.0879995,23.702888,12z/data=!3m1!4b1!4m6!3m5!1s0x47210c0223630975:0x4d319ea41f64ae99!8m2!3d52.0996507!4d23.7636662!16zL20vMDE1anNt"
+                  class="contact-us__description">
+                  Москва, ул. 3-я Хорошевская, дом 2, строение 1
+                </a>
+              </li>
+
+              <li class="contact-us__item contact-us__item--second">
+                <p class="contact-us__title">Телефон</p>
+                <a href="tel: +7 495 737-06-01" class="contact-us__description">
+                  +7 495 737-06-01, +7 495 737-06-01
+                </a>
+              </li>
+
+              <li class="contact-us__item contact-us__item--third">
+                <p class="contact-us__title">E-mail</p>
+                <a
+                  class="contact-us__description"
+                  href="mailto: dell_ru@gmail.com">
+                  dell_ru@gmail.com
+                </a>
+              </li>
+
+              <li class="contact-us__item">
+                <div class="social">
+                  <a
+                    href="https://www.facebook.com/MoldovaUSALinkSystem
+                      /photos/a.1255904651090910/5338404039507597/">
+                    <img
+                      class="social__icon"
+                      src="./assets/img/svg/form-facebook-icon.svg"
+                      alt="facebook-icon" />
+                  </a>
+                  <a href="https://www.whatsapp.com/">
+                    <img
+                      class="social__icon"
+                      src="./assets/img/svg/form-whatsup-icon.svg"
+                      alt="whatsapp-icon" />
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
