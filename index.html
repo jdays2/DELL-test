@@ -24,23 +24,23 @@
         <div class="header__nav-bar">
           <ul class="nav">
             <li class="nav__item">
-              <a href="#">ГЛАВНАЯ</a>
+              <a href="#" class="nav__link">ГЛАВНАЯ</a>
             </li>
 
             <li class="nav__item">
-              <a href="#catalog">КАТАЛОГ</a>
+              <a href="#catalog" class="nav__link">КАТАЛОГ</a>
             </li>
 
             <li class="nav__item">
-              <a href="#news">НОВОСТИ</a>
+              <a href="#news" class="nav__link">НОВОСТИ</a>
             </li>
 
             <li class="nav__item">
-              <a href="#about-us">НАШ АСЦ</a>
+              <a href="#about-us" class="nav__link">НАШ АСЦ</a>
             </li>
 
             <li class="nav__item">
-              <a href="#footer">КОНТАКТЫ</a>
+              <a href="#footer" class="nav__link">КОНТАКТЫ</a>
             </li>
 
             <li class="nav__item">
@@ -81,7 +81,9 @@
                   src="./assets/img/svg/store-icon.svg"
                   class="nav-icons__icon nav-icons__icon--fourth" />
               </a>
-              <span class="nav-icons__status-icon">3</span>
+              <div class="nav-icons__status-icon">
+                <span class="nav-icons__value">3</span>
+              </div>
             </li>
           </ul>
         </div>
@@ -329,7 +331,7 @@
                 позволили компании на 4,7% понизить цены по сравнению
                 с конкурентами.
               </p>
-              <a class="link">
+              <a href="#about-us" class="link">
                 <div class="link__button">
                   <img
                     src="./assets/img/svg/link-button-arrow.svg"
@@ -431,7 +433,7 @@
                 последних новинках, перейдя по кнопке
               </p>
             </div>
-            <a class="link">
+            <a href="" class="link">
               <span class="link__description">Все новости</span>
               <div class="link__button">
                 <img
@@ -746,7 +748,7 @@
               </div>
             </div>
             <div class="about-us__request request">
-              <form class="request__content">
+              <form class="request__content" id="request-form">
                 <div class="request__header">
                   <p class="request__title">Оставьте заявку</p>
                   <p class="request__description">
@@ -758,14 +760,18 @@
                   <label class="request__label request__label--name">
                     Ваше имя
                   </label>
-                  <input class="request__input" type="text" />
+                  <input
+                    class="request__input request__input--name"
+                    type="text" />
                 </div>
 
                 <div class="request__field">
                   <label class="request__label request__label--tel">
                     Номер телефона
                   </label>
-                  <input class="request__input" type="text" />
+                  <input
+                    class="request__input request__input--tel"
+                    type="text" />
                 </div>
 
                 <div class="request__field">
@@ -776,7 +782,7 @@
                   <textarea
                     class="request__input request__input--comment"></textarea>
 
-                  <a class="link">
+                  <button class="link" form="request-form" id="#submit-button">
                     <div class="link__button">
                       <img
                         src="./assets/img/svg/link-button-arrow.svg"
@@ -785,7 +791,7 @@
                     </div>
 
                     <span class="link__description">Заказать</span>
-                  </a>
+                  </button>
                 </div>
               </form>
             </div>
@@ -808,19 +814,19 @@
               <p class="nav__list-title nav__list-title--first">Каталог</p>
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a>Ноутбуки</a>
+                  <a href="" class="nav__link">Ноутбуки</a>
                 </li>
                 <li class="nav__item">
-                  <a>Персональные компьютеры</a>
+                  <a href="" class="nav__link">Персональные компьютеры</a>
                 </li>
                 <li class="nav__item">
-                  <a>Серверы</a>
+                  <a href="" class="nav__link">Серверы</a>
                 </li>
                 <li class="nav__item">
-                  <a>Dell EMC</a>
+                  <a href="" class="nav__link">Dell EMC</a>
                 </li>
                 <li class="nav__item">
-                  <a>Запасные части к Dell EMC</a>
+                  <a href="" class="nav__link">Запасные части к Dell EMC</a>
                 </li>
               </ul>
             </div>
@@ -829,19 +835,19 @@
               <p class="nav__list-title">Личный кабинет</p>
               <ul class="nav__list nav__list--second">
                 <li class="nav__item">
-                  <a>Профиль</a>
+                  <a href="" class="nav__link">Профиль</a>
                 </li>
                 <li class="nav__item">
-                  <a>История заказов</a>
+                  <a href="" class="nav__link">История заказов</a>
                 </li>
                 <li class="nav__item">
-                  <a>SMS-уведомления</a>
+                  <a href="" class="nav__link">SMS-уведомления</a>
                 </li>
                 <li class="nav__item">
-                  <a>Избранное</a>
+                  <a href="" class="nav__link">Избранное</a>
                 </li>
                 <li class="nav__item">
-                  <a>Сравнение товаров</a>
+                  <a href="" class="nav__link">Сравнение товаров</a>
                 </li>
               </ul>
             </div>
@@ -850,16 +856,16 @@
               <p class="nav__list-title nav__list-title--third">Помощь</p>
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a>Доставка и оплата</a>
+                  <a href="" class="nav__link">Доставка и оплата</a>
                 </li>
                 <li class="nav__item">
-                  <a>Контакты</a>
+                  <a href="" class="nav__link">Контакты</a>
                 </li>
                 <li class="nav__item">
-                  <a>FAQ</a>
+                  <a href="" class="nav__link">FAQ</a>
                 </li>
                 <li class="nav__item">
-                  <a>Наш АСЦ</a>
+                  <a href="" class="nav__link">Наш АСЦ</a>
                 </li>
               </ul>
             </div>
@@ -916,5 +922,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
