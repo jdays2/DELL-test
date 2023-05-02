@@ -392,6 +392,9 @@ body {
   position: absolute;
   width: 509px;
 }
+.slider .profitable-offer__img--two {
+  display: none;
+}
 .slider .profitable-offer__title {
   font-size: 25px;
   line-height: 32px;
