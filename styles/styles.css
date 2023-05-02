@@ -612,6 +612,9 @@ body {
   position: absolute;
   right: 0px;
 }
+.benefits__cards .card__backgraund-img--mobile {
+  display: none;
+}
 .benefits__cards .card__backgraund-img--third {
   top: -3px;
   right: 2px;
@@ -709,7 +712,6 @@ body {
 .news__cards .card__wrapper {
   width: 415px;
   height: 365px;
-  background-image: url("./assets/png/news-backgraund-1.png");
   position: relative;
   border-radius: 45px 0px 0px 0px;
   transition: box-shadow 0.3s ease-in-out;
@@ -751,7 +753,6 @@ body {
 }
 .news__cards .card__backgraund-img {
   width: 415px;
-  height: 259px;
   position: absolute;
   transition: 0.6s;
   cursor: pointer;
@@ -813,6 +814,9 @@ body {
   background: #1f2021;
 }
 .news__cards .card__description {
+  height: 21px;
+  width: 365px;
+  overflow: hidden;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -905,32 +909,34 @@ body {
   padding-top: 2px;
 }
 .about-us .contacts__list .item__icon-wrapper {
+  margin-right: 18px;
+}
+.about-us .contacts__list .item__icon-wrapper--location {
+  margin-right: 17px;
+}
+.about-us .contacts__list .item__icon {
   height: 38px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.4s;
 }
-.about-us .contacts__list .item__icon-wrapper:hover {
+.about-us .contacts__list .item__icon:hover {
   transform: scale(1.1);
 }
-.about-us .contacts__list .item__icon-wrapper:active {
+.about-us .contacts__list .item__icon:active {
   transform: scale(0.925);
 }
-.about-us .contacts__list .item__icon-wrapper--location {
-  padding-top: 2px;
+.about-us .contacts__list .item__icon--location {
   padding-left: 1px;
-  margin-right: 17px;
 }
-.about-us .contacts__list .item__icon-wrapper--mail {
+.about-us .contacts__list .item__icon--mail {
   padding-top: 5px;
   padding-left: 2px;
-  margin-right: 18px;
 }
-.about-us .contacts__list .item__icon-wrapper--tel {
+.about-us .contacts__list .item__icon--tel {
   padding-top: 0px;
   padding-left: 2px;
-  margin-right: 18px;
 }
 .about-us .contacts__list .item__icon:hover {
   transform: scale(1.1);
@@ -1046,9 +1052,11 @@ body {
   padding-left: 16px;
 }
 .about-us .request__input--error {
+  background: rgba(255, 75, 75, 0.1);
   border: 2px solid rgba(255, 75, 75, 0.5);
 }
 .about-us .request__input--correct {
+  background: rgba(2, 207, 9, 0.1);
   border: 2px solid rgba(2, 207, 9, 0.5);
 }
 .about-us .request__input--comment {
@@ -1094,7 +1102,7 @@ body {
   flex-direction: column;
 }
 .footer .nav__list-wrapper--second {
-  padding-left: 5px;
+  margin-left: -4px;
 }
 .footer .nav__list-title {
   font-weight: 400;

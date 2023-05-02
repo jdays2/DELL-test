@@ -400,6 +400,8 @@ body
             &__backgraund-img
                 position: absolute
                 right: 0px
+                &--mobile
+                    display: none
                 &--third
                     top:-3px
                     right: 2px
@@ -480,7 +482,6 @@ body
             &__wrapper
                 width: 415px
                 height: 365px
-                background-image: url("./assets/png/news-backgraund-1.png")
                 position: relative
                 border-radius: 45px 0px 0px 0px
                 transition: box-shadow 0.3s ease-in-out
@@ -518,7 +519,6 @@ body
                 color: #292D32
             &__backgraund-img
                 width: 415px
-                height: 259px
                 position: absolute
                 transition: 0.6s
                 cursor: pointer
@@ -570,6 +570,9 @@ body
                 &:active
                     background: #1f2021
             &__description
+                height: 21px
+                width: 365px
+                overflow: hidden
                 font-weight: 400
                 font-size: 14px
                 line-height: 21px
@@ -645,8 +648,12 @@ body
                     display: flex
                     align-items: center
                     &--email
-                        padding-top:2px    
+                        padding-top:2px   
                 &__icon-wrapper
+                    margin-right: 18px
+                    &--location
+                        margin-right: 17px
+                &__icon
                     height: 38px
                     display: flex
                     justify-content: center
@@ -657,17 +664,14 @@ body
                     &:active
                         transform: scale(0.925)
                     &--location
-                        padding-top: 2px
                         padding-left: 1px
-                        margin-right: 17px
                     &--mail
                         padding-top: 5px
                         padding-left: 2px
-                        margin-right: 18px
+                       
                     &--tel
                         padding-top: 0px
                         padding-left: 2px
-                        margin-right: 18px
 
                 &__icon
                     &:hover
@@ -766,8 +770,10 @@ body
             font-size: 23px
             padding-left: 16px
             &--error
+                background: rgba(255, 75, 75, 0.1)
                 border: 2px solid rgba(255, 75, 75, 0.5)
             &--correct
+                background: rgba(2, 207, 9, 0.1)
                 border: 2px solid rgba(2, 207, 9, 0.5)
             &--comment
                 padding-top: 16px
@@ -809,7 +815,7 @@ body
             display: flex
             flex-direction: column
             &--second
-                padding-left: 5px
+                margin-left: -4px
         &__list-title
             font-weight: 400
             font-size: 25px
