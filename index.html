@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,9 +44,9 @@
               <a href="#footer" class="nav__link">КОНТАКТЫ</a>
             </li>
 
-            <li class="nav__item">
+            <li class="nav__item nav__item--searh">
               <a href="#" class="nav__search">
-                <img src="./assets/img/svg/find-icon.svg" />
+                <img class="nav__search-icon" src="./assets/img/svg/find-icon.svg" />
               </a>
             </li>
           </ul>
@@ -85,12 +86,45 @@
                 <span class="nav-icons__value">3</span>
               </div>
             </li>
+
+            <li class="burger-button" id="burger-button">
+              <div class="nav-icons__icon-wrapper">
+               <span class="burger-button__element"></span>
+               <span class="burger-button__element"></span>
+               <span class="burger-button__element"></span>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </header>
 
     <main>
+      <div class="burger-menu" id="burger-menu">
+        <ul class="nav">
+          <li class="nav__item" id="burger-link">
+            <a href="#" class="nav__link">ГЛАВНАЯ</a>
+          </li>
+
+          <li class="nav__item" id="burger-link">
+            <a href="#catalog" class="nav__link">КАТАЛОГ</a>
+          </li>
+
+          <li class="nav__item" id="burger-link">
+            <a href="#news" class="nav__link">НОВОСТИ</a>
+          </li>
+
+          <li class="nav__item" id="burger-link">
+            <a href="#about-us" class="nav__link">НАШ АСЦ</a>
+          </li>
+
+          <li class="nav__item" id="burger-link">
+            <a href="#footer" class="nav__link">КОНТАКТЫ</a>
+          </li>
+        </div>
+      <div class="shadow-wrapper">
+      </div>
+
       <section class="slider" id="slider">
         <div class="slider__wrapper">
           <img
@@ -109,7 +143,16 @@
           </div>
 
           <div class="slider-block">
+            <div class="slider-block__controller controller">
+              <span
+                class="controller__button controller__button--active"></span>
+              <span class="controller__button"></span>
+              <span class="controller__button"></span>
+              <span class="controller__button"></span>
+              <span class="controller__button"></span>
+            </div>
             <div class="slider-block__line">
+              
               <div class="card">
                 <div class="card__wrapper">
                   <p class="card__exposition">Новое поступление</p>
@@ -123,17 +166,10 @@
                         alt="button-arrow-icon" />
                     </div>
 
-                    <span class="link__description">Побробнее</span>
+                    <span class="link__description">Подробнее</span>
                   </a>
 
-                  <div class="slider-block__controller controller">
-                    <span
-                      class="controller__button controller__button--active"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                  </div>
+                 
                 </div>
 
                 <img
@@ -157,14 +193,7 @@
                     <span class="link__description">Побробнее</span>
                   </a>
 
-                  <div class="slider-block__controller controller">
-                    <span
-                      class="controller__button controller__button--active"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                  </div>
+                  
                 </div>
 
                 <img
@@ -189,14 +218,57 @@
                     <span class="link__description">Побробнее</span>
                   </a>
 
-                  <div class="slider-block__controller controller">
-                    <span
-                      class="controller__button controller__button--active"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                  </div>
+                
+                </div>
+
+                <img
+                  src="./assets/img/png/slider-img-first.png"
+                  class="card__img"
+                  alt="slider-img" />
+              </div>
+
+              <div class="card">
+                <div class="card__wrapper">
+                  <p class="card__exposition">Новое поступление</p>
+                  <p class="card__title">Лучшие товары от компании Dell</p>
+
+                  <a class="link">
+                    <div class="link__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        class="link__button-img"
+                        alt="button-arrow-icon" />
+                    </div>
+
+                    <span class="link__description">Побробнее</span>
+                  </a>
+
+                
+                </div>
+
+                <img
+                  src="./assets/img/png/slider-img-first.png"
+                  class="card__img"
+                  alt="slider-img" />
+              </div>
+
+              <div class="card">
+                <div class="card__wrapper">
+                  <p class="card__exposition">Новое поступление</p>
+                  <p class="card__title">Лучшие товары от компании Dell</p>
+
+                  <a class="link">
+                    <div class="link__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        class="link__button-img"
+                        alt="button-arrow-icon" />
+                    </div>
+
+                    <span class="link__description">Побробнее</span>
+                  </a>
+
+                
                 </div>
 
                 <img
@@ -211,11 +283,15 @@
             <a class="profitable-offer__wrapper">
               <img
                 src="./assets/img/png/dell-offer.png"
-                class="profitable-offer__img"
+                class="profitable-offer__img profitable-offer__img--one"
                 alt="backgraund-pc-img" />
-              <span class="profitable-offer__title">
+                <img
+                src="./assets/img/png/image 23.png"
+                class="profitable-offer__img profitable-offer__img--two"
+                alt="backgraund-pc-img" />
+              <p class="profitable-offer__title">
                 Выгодное предложение от Dell
-              </span>
+              </p>
               <img
                 src="./assets/img/svg/dell-offer-arrow.svg"
                 class="profitable-offer__arrow-icon"
@@ -246,7 +322,7 @@
             </a>
           </div>
 
-          <div class="card">
+          <div class="card card--first">
             <span class="card__number">01</span>
             <img
               src="./assets/img/png/catalog-1.png"
@@ -272,7 +348,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card card--second">
             <span class="card__number">03</span>
             <img
               src="./assets/img/png/catalog-3.png"
@@ -285,7 +361,7 @@
             </div>
           </div>
 
-          <div class="card card--brighter">
+          <div class="card card--brighter card--third">
             <span class="card__number">04</span>
             <img
               src="./assets/img/png/catalog-4.png"
@@ -298,7 +374,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card card--fourth">
             <span class="card__number">05</span>
             <img
               src="./assets/img/png/catalog-5.png"
@@ -350,6 +426,10 @@
                 src="./assets/img/svg/background-vector.svg"
                 class="card__backgraund-img"
                 alt="card-background-element" />
+                <img
+                src="./assets/img/svg/mobile-backgraund-element.svg"
+                class="card__backgraund-img card__backgraund-img--mobile"
+                alt="card-background-element" />
               <div class="card__icon-wrapper">
                 <img
                   src="./assets/img/svg/benefits-card.svg"
@@ -376,6 +456,10 @@
                   src="./assets/img/svg/benefits-done.svg"
                   class="card__icon"
                   alt="done-icon" />
+                  <img
+                src="./assets/img/svg/mobile-backgraund-element.svg"
+                class="card__backgraund-img card__backgraund-img--mobile"
+                alt="card-background-element" />
               </div>
               <p class="card__title">Авторизованный сервисный центр DELL</p>
               <p class="card__description">
@@ -394,6 +478,10 @@
                   src="./assets/img/svg/benefits-experts.svg"
                   class="card__icon"
                   alt="experts-icon" />
+                  <img
+                src="./assets/img/svg/mobile-backgraund-element.svg"
+                class="card__backgraund-img card__backgraund-img--mobile"
+                alt="card-background-element" />
               </div>
               <p class="card__title">Высокий уровень технической экспертизы</p>
               <p class="card__description">
@@ -412,6 +500,10 @@
                   src="./assets/img/svg/benefits-box.svg"
                   class="card__icon"
                   alt="box-icon" />
+                  <img
+                src="./assets/img/svg/mobile-backgraund-element.svg"
+                class="card__backgraund-img card__backgraund-img--mobile"
+                alt="card-background-element" />
               </div>
               <p class="card__title">Официальный партнер DELL</p>
               <p class="card__description card__description--fourth">
@@ -445,7 +537,7 @@
           </div>
 
           <div class="news__cards">
-            <div class="card">
+            <div class="card ">
               <div class="card__date">
                 <span class="card__day">11</span>
                 <span class="card__month">июля</span>
@@ -470,17 +562,18 @@
                     <button class="card__button">
                       <img
                         src="./assets/img/svg/link-button-arrow.svg"
-                        alt="button-arrow-icon" />
+                        alt="button-arrow-icon" 
+                        class="card__icon"/>
                     </button>
                   </div>
                   <p class="card__description">
-                    Вы можете посмотреть ещё больше интересных
+                    Вы можете посмотреть ещё больше интересных новостей
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="card">
+            <div class="card card--nonmobile">
               <div class="card__date">
                 <span class="card__day">11</span>
                 <span class="card__month">июля</span>
@@ -510,13 +603,13 @@
                     </button>
                   </div>
                   <p class="card__description">
-                    Вы можете посмотреть ещё больше интересных
+                    Вы можете посмотреть ещё больше интересных новостей
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="card">
+            <div class="card card--nonmobile">
               <div class="card__date">
                 <span class="card__day">11</span>
                 <span class="card__month">июля</span>
@@ -546,7 +639,7 @@
                     </button>
                   </div>
                   <p class="card__description">
-                    Вы можете посмотреть ещё больше интересных
+                    Вы можете посмотреть ещё больше интересных новостей
                   </p>
                 </div>
               </div>
@@ -560,7 +653,7 @@
               <div class="card__wrapper">
                 <img
                   src="./assets/img/png/news-backgraund-4.png"
-                  class="card__backgraund-img"
+                  class="card__backgraund-img card__backgraund-img--first"
                   alt="card-backgraund" />
                 <img
                   src="./assets/img/svg/news-img-part1.svg"
@@ -581,7 +674,7 @@
                     </button>
                   </div>
                   <p class="card__description">
-                    Вы можете посмотреть ещё больше интересных
+                    Вы можете посмотреть ещё больше интересных новостей
                   </p>
                 </div>
               </div>
@@ -595,7 +688,7 @@
               <div class="card__wrapper">
                 <img
                   src="./assets/img/png/news-backgraund-5.png"
-                  class="card__backgraund-img"
+                  class="card__backgraund-img card__backgraund-img--second"
                   alt="card-backgraund" />
                 <img
                   src="./assets/img/svg/news-img-part1.svg"
@@ -616,13 +709,13 @@
                     </button>
                   </div>
                   <p class="card__description">
-                    Вы можете посмотреть ещё больше интересных
+                    Вы можете посмотреть ещё больше интересных новостей
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="card">
+            <div class="card card--nonmobile">
               <div class="card__date">
                 <span class="card__day">11</span>
                 <span class="card__month">июня</span>
@@ -650,7 +743,7 @@
                     </button>
                   </div>
                   <p class="card__description">
-                    Вы можете посмотреть ещё больше интересных
+                    Вы можете посмотреть ещё больше интересных новостей
                   </p>
                 </div>
               </div>
@@ -675,7 +768,7 @@
               <div class="contacts__header">
                 <p class="contacts__title">Наши контакты</p>
                 <p class="contacts__description">
-                  Dы можете связаться с нашим онлайн-консультантом
+                  Вы можете связаться c нашим онлайн-консультантом
                 </p>
               </div>
 
@@ -687,7 +780,7 @@
                       23.7270421,16.25z/data=!4m6!3m5!1s0x47210c0223630975:0x4d319ea41f64ae99!8m2!3d52.0996507!4d23.7636662!16zL20vMDE1anNt"
                       class="item__icon-wrapper item__icon-wrapper--location">
                       <img
-                        class="item__icon"
+                        class="item__icon item__icon--location"
                         src="./assets/img/svg/form-location-icon.svg"
                         alt="location-icon" />
                     </a>
@@ -704,7 +797,7 @@
                       href="mailto: markgorsharik@mail.com"
                       class="item__icon-wrapper">
                       <img
-                        class="item__icon item__icon-wrapper--mail"
+                        class="item__icon item__icon--mail"
                         src="./assets/img/svg/form-email-icon.svg"
                         alt="mail-icon" />
                     </a>
@@ -717,7 +810,7 @@
                   <div class="item__wrapper">
                     <a href="tel: +375336862774" class="item__icon-wrapper">
                       <img
-                        class="item__icon item__icon-wrapper--tel"
+                        class="item__icon item__icon--tel"
                         src="./assets/img/svg/form-tel-icon.svg"
                         alt="telephone-icon" />
                     </a>
@@ -782,7 +875,7 @@
                   <textarea
                     class="request__input request__input--comment"></textarea>
 
-                  <button class="link" form="request-form" id="#submit-button">
+                  <button class="link" form="request-form" id="submit-button">
                     <div class="link__button">
                       <img
                         src="./assets/img/svg/link-button-arrow.svg"
@@ -810,9 +903,9 @@
                 class="footer__logo"
                 alt="footer-logo" />
             </a>
-            <div class="nav__list-wrapper">
-              <p class="nav__list-title nav__list-title--first">Каталог</p>
-              <ul class="nav__list">
+            <div class="nav__list-wrapper nav__list-wrapper--first">
+              <p class="nav__list-title">Каталог</p>
+              <ul class="nav__list nav__list--first">
                 <li class="nav__item">
                   <a href="" class="nav__link">Ноутбуки</a>
                 </li>
@@ -833,7 +926,7 @@
 
             <div class="nav__list-wrapper nav__list-wrapper--second">
               <p class="nav__list-title">Личный кабинет</p>
-              <ul class="nav__list nav__list--second">
+              <ul class="nav__list">
                 <li class="nav__item">
                   <a href="" class="nav__link">Профиль</a>
                 </li>
@@ -852,7 +945,7 @@
               </ul>
             </div>
 
-            <div class="nav__list-wrapper">
+            <div class="nav__list-wrapper nav__list-wrapper--third">
               <p class="nav__list-title nav__list-title--third">Помощь</p>
               <ul class="nav__list">
                 <li class="nav__item">
@@ -922,6 +1015,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/app.js"></script>
+    <script src="./dist/bundle.js"></script>
   </body>
 </html>

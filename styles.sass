@@ -1,5 +1,6 @@
 @import "./reset"
 
+
 html
     scroll-behavior: smooth
 
@@ -15,7 +16,7 @@ body
 .header
     top: 0px
     position: fixed
-    z-index: 4
+    z-index: 5
     box-shadow: 0 1px 4px rgba(0,0,0,0.1)
     width: 100%
     background: #FFFFFF
@@ -74,6 +75,24 @@ body
                 border-radius: 50%
                 padding-bottom: 2.5px
                 cursor: pointer
+                position: relative
+            .burger-button
+                display: none
+                position: static
+                z-index: 2
+                gap: 6px
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                &__element
+                    width: 18px
+                    border-top-left-radius: 5px
+                    border-top-right-radius: 5px
+                    border-bottom-left-radius: 5px
+                    border-bottom-right-radius: 5px
+                    border: 1px solid #292D32
+
+
             &__status-icon
                 width: 16px
                 height: 16px
@@ -92,6 +111,15 @@ body
                 display: flex
                 align-items: center
                 justify-content: center
+            &__icon-wrapper
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                gap: 6px
+.burger-menu
+    display: none
+    
 .slider
     margin-top: 123px
     width: 100%
@@ -138,12 +166,15 @@ body
         width: 1021px
         height: 555px
         margin-left: 130px
+        position: relative
         overflow: hidden
         &__controller
             width: 69px
             height: 10px
         &__line
             display: flex
+            position: absolute
+            transition: 1s
             .card
                 display: flex
                 &__img
@@ -168,11 +199,12 @@ body
                     margin-bottom: 60px
 
     .controller
+        z-index: 4
         display: flex
         gap: 10px
         align-items: center
         position: absolute
-        right: 289px
+        right: 40px
         bottom: 115px
         &__button
             border: 0
@@ -215,6 +247,8 @@ body
             top: 0px
             position: absolute
             width: 509px
+            &--two
+                display: none
         &__title
             font-size: 25px
             line-height: 32px
@@ -397,6 +431,8 @@ body
             &__backgraund-img
                 position: absolute
                 right: 0px
+                &--mobile
+                    display: none
                 &--third
                     top:-3px
                     right: 2px
@@ -477,7 +513,6 @@ body
             &__wrapper
                 width: 415px
                 height: 365px
-                background-image: url("./assets/png/news-backgraund-1.png")
                 position: relative
                 border-radius: 45px 0px 0px 0px
                 transition: box-shadow 0.3s ease-in-out
@@ -515,7 +550,6 @@ body
                 color: #292D32
             &__backgraund-img
                 width: 415px
-                height: 259px
                 position: absolute
                 transition: 0.6s
                 cursor: pointer
@@ -567,6 +601,9 @@ body
                 &:active
                     background: #1f2021
             &__description
+                height: 21px
+                width: 365px
+                overflow: hidden
                 font-weight: 400
                 font-size: 14px
                 line-height: 21px
@@ -642,8 +679,12 @@ body
                     display: flex
                     align-items: center
                     &--email
-                        padding-top:2px    
+                        padding-top:2px   
                 &__icon-wrapper
+                    margin-right: 18px
+                    &--location
+                        margin-right: 17px
+                &__icon
                     height: 38px
                     display: flex
                     justify-content: center
@@ -654,17 +695,14 @@ body
                     &:active
                         transform: scale(0.925)
                     &--location
-                        padding-top: 2px
                         padding-left: 1px
-                        margin-right: 17px
                     &--mail
                         padding-top: 5px
                         padding-left: 2px
-                        margin-right: 18px
+                       
                     &--tel
                         padding-top: 0px
                         padding-left: 2px
-                        margin-right: 18px
 
                 &__icon
                     &:hover
@@ -763,8 +801,10 @@ body
             font-size: 23px
             padding-left: 16px
             &--error
+                background: rgba(255, 75, 75, 0.1)
                 border: 2px solid rgba(255, 75, 75, 0.5)
             &--correct
+                background: rgba(2, 207, 9, 0.1)
                 border: 2px solid rgba(2, 207, 9, 0.5)
             &--comment
                 padding-top: 16px
@@ -776,6 +816,9 @@ body
                 margin-bottom: 57px
         .link__description
             color: #FFFFFF
+
+        .link
+            padding-left: 0px
 
 .footer
     width: 100%
@@ -806,7 +849,7 @@ body
             display: flex
             flex-direction: column
             &--second
-                padding-left: 5px
+                margin-left: 2.3px
         &__list-title
             font-weight: 400
             font-size: 25px
@@ -828,7 +871,7 @@ body
             font-size: 16px
             line-height: 19px   
             color: #292D32
-            letter-spacing: 0.19px
+            letter-spacing: -0.1px
             &:hover
                 color: #000000
                 transform: scale(1.05)
