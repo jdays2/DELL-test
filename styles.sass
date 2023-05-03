@@ -16,7 +16,7 @@ body
 .header
     top: 0px
     position: fixed
-    z-index: 4
+    z-index: 5
     box-shadow: 0 1px 4px rgba(0,0,0,0.1)
     width: 100%
     background: #FFFFFF
@@ -75,6 +75,24 @@ body
                 border-radius: 50%
                 padding-bottom: 2.5px
                 cursor: pointer
+                position: relative
+            .burger-button
+                display: none
+                position: static
+                z-index: 2
+                gap: 6px
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                &__element
+                    width: 18px
+                    border-top-left-radius: 5px
+                    border-top-right-radius: 5px
+                    border-bottom-left-radius: 5px
+                    border-bottom-right-radius: 5px
+                    border: 1px solid #292D32
+
+
             &__status-icon
                 width: 16px
                 height: 16px
@@ -93,6 +111,15 @@ body
                 display: flex
                 align-items: center
                 justify-content: center
+            &__icon-wrapper
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                gap: 6px
+.burger-menu
+    display: none
+    
 .slider
     margin-top: 123px
     width: 100%
@@ -139,12 +166,15 @@ body
         width: 1021px
         height: 555px
         margin-left: 130px
+        position: relative
         overflow: hidden
         &__controller
             width: 69px
             height: 10px
         &__line
             display: flex
+            position: absolute
+            transition: 1s
             .card
                 display: flex
                 &__img
@@ -169,11 +199,12 @@ body
                     margin-bottom: 60px
 
     .controller
+        z-index: 4
         display: flex
         gap: 10px
         align-items: center
         position: absolute
-        right: 289px
+        right: 40px
         bottom: 115px
         &__button
             border: 0
@@ -786,6 +817,9 @@ body
         .link__description
             color: #FFFFFF
 
+        .link
+            padding-left: 0px
+
 .footer
     width: 100%
     background-color: #FFFFFF
@@ -815,7 +849,7 @@ body
             display: flex
             flex-direction: column
             &--second
-                margin-left: -4px
+                margin-left: 2.3px
         &__list-title
             font-weight: 400
             font-size: 25px
@@ -837,7 +871,7 @@ body
             font-size: 16px
             line-height: 19px   
             color: #292D32
-            letter-spacing: 0.19px
+            letter-spacing: -0.1px
             &:hover
                 color: #000000
                 transform: scale(1.05)

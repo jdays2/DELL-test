@@ -44,9 +44,9 @@
               <a href="#footer" class="nav__link">КОНТАКТЫ</a>
             </li>
 
-            <li class="nav__item">
+            <li class="nav__item nav__item--searh">
               <a href="#" class="nav__search">
-                <img src="./assets/img/svg/find-icon.svg" />
+                <img class="nav__search-icon" src="./assets/img/svg/find-icon.svg" />
               </a>
             </li>
           </ul>
@@ -86,12 +86,45 @@
                 <span class="nav-icons__value">3</span>
               </div>
             </li>
+
+            <li class="burger-button" id="burger-button">
+              <div class="nav-icons__icon-wrapper">
+               <span class="burger-button__element"></span>
+               <span class="burger-button__element"></span>
+               <span class="burger-button__element"></span>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </header>
 
     <main>
+      <div class="burger-menu" id="burger-menu">
+        <ul class="nav">
+          <li class="nav__item" id="burger-link">
+            <a href="#" class="nav__link">ГЛАВНАЯ</a>
+          </li>
+
+          <li class="nav__item" id="burger-link">
+            <a href="#catalog" class="nav__link">КАТАЛОГ</a>
+          </li>
+
+          <li class="nav__item" id="burger-link">
+            <a href="#news" class="nav__link">НОВОСТИ</a>
+          </li>
+
+          <li class="nav__item" id="burger-link">
+            <a href="#about-us" class="nav__link">НАШ АСЦ</a>
+          </li>
+
+          <li class="nav__item" id="burger-link">
+            <a href="#footer" class="nav__link">КОНТАКТЫ</a>
+          </li>
+        </div>
+      <div class="shadow-wrapper">
+      </div>
+
       <section class="slider" id="slider">
         <div class="slider__wrapper">
           <img
@@ -110,7 +143,16 @@
           </div>
 
           <div class="slider-block">
+            <div class="slider-block__controller controller">
+              <span
+                class="controller__button controller__button--active"></span>
+              <span class="controller__button"></span>
+              <span class="controller__button"></span>
+              <span class="controller__button"></span>
+              <span class="controller__button"></span>
+            </div>
             <div class="slider-block__line">
+              
               <div class="card">
                 <div class="card__wrapper">
                   <p class="card__exposition">Новое поступление</p>
@@ -127,14 +169,7 @@
                     <span class="link__description">Подробнее</span>
                   </a>
 
-                  <div class="slider-block__controller controller">
-                    <span
-                      class="controller__button controller__button--active"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                  </div>
+                 
                 </div>
 
                 <img
@@ -142,7 +177,7 @@
                   class="card__img"
                   alt="slider-img-first" />
               </div>
-              <!-- <div class="card">
+              <div class="card">
                 <div class="card__wrapper">
                   <p class="card__exposition">Новое поступление</p>
                   <p class="card__title">Лучшие товары от компании Dell</p>
@@ -158,14 +193,7 @@
                     <span class="link__description">Побробнее</span>
                   </a>
 
-                  <div class="slider-block__controller controller">
-                    <span
-                      class="controller__button controller__button--active"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                  </div>
+                  
                 </div>
 
                 <img
@@ -190,21 +218,64 @@
                     <span class="link__description">Побробнее</span>
                   </a>
 
-                  <div class="slider-block__controller controller">
-                    <span
-                      class="controller__button controller__button--active"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                    <span class="controller__button"></span>
-                  </div>
+                
                 </div>
 
                 <img
                   src="./assets/img/png/slider-img-first.png"
                   class="card__img"
                   alt="slider-img" />
-              </div> -->
+              </div>
+
+              <div class="card">
+                <div class="card__wrapper">
+                  <p class="card__exposition">Новое поступление</p>
+                  <p class="card__title">Лучшие товары от компании Dell</p>
+
+                  <a class="link">
+                    <div class="link__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        class="link__button-img"
+                        alt="button-arrow-icon" />
+                    </div>
+
+                    <span class="link__description">Побробнее</span>
+                  </a>
+
+                
+                </div>
+
+                <img
+                  src="./assets/img/png/slider-img-first.png"
+                  class="card__img"
+                  alt="slider-img" />
+              </div>
+
+              <div class="card">
+                <div class="card__wrapper">
+                  <p class="card__exposition">Новое поступление</p>
+                  <p class="card__title">Лучшие товары от компании Dell</p>
+
+                  <a class="link">
+                    <div class="link__button">
+                      <img
+                        src="./assets/img/svg/link-button-arrow.svg"
+                        class="link__button-img"
+                        alt="button-arrow-icon" />
+                    </div>
+
+                    <span class="link__description">Побробнее</span>
+                  </a>
+
+                
+                </div>
+
+                <img
+                  src="./assets/img/png/slider-img-first.png"
+                  class="card__img"
+                  alt="slider-img" />
+              </div>
             </div>
           </div>
 
@@ -804,7 +875,7 @@
                   <textarea
                     class="request__input request__input--comment"></textarea>
 
-                  <button class="link" form="request-form" id="#submit-button">
+                  <button class="link" form="request-form" id="submit-button">
                     <div class="link__button">
                       <img
                         src="./assets/img/svg/link-button-arrow.svg"
@@ -944,6 +1015,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/app.js"></script>
+    <script src="./dist/bundle.js"></script>
   </body>
 </html>
