@@ -41,8 +41,20 @@
                     border-radius: 50%
                     padding-bottom: 2.5px
                     cursor: pointer
+                    transition: transform 0.3s ease
                     .nav-icons__icon-wrapper
                         position: static
+
+                .burger-button--active .burger-button__element:nth-child(2) 
+                    transform: scaleX(0)
+                    opacity: 0    
+
+                .burger-button--active .burger-button__element:nth-child(1) 
+                    transform: translateY(8px) rotate(45deg)
+
+                .burger-button--active .burger-button__element:nth-child(3) 
+                    transform: translateY(-8px) rotate(-45deg)
+
     .burger-menu
         display: block
         position: fixed
@@ -109,7 +121,7 @@
                 top: 560px
                 right: 95px
                 gap: 8px
-                
+
             .card
                 width: 345px
                 height: 503px
