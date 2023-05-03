@@ -340,7 +340,7 @@ body {
 .slider .slider-block__line {
   display: flex;
   position: absolute;
-  transition: 1s;
+  transition: all 0.8s ease-in-out;
 }
 .slider .slider-block__line .card {
   display: flex;

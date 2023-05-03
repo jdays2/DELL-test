@@ -50,9 +50,20 @@
     border-radius: 50%;
     padding-bottom: 2.5px;
     cursor: pointer;
+    transition: transform 0.3s ease;
   }
   .header__nav-bar .nav-icons .burger-button .nav-icons__icon-wrapper {
     position: static;
+  }
+  .header__nav-bar .nav-icons .burger-button--active .burger-button__element:nth-child(2) {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  .header__nav-bar .nav-icons .burger-button--active .burger-button__element:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .header__nav-bar .nav-icons .burger-button--active .burger-button__element:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   .burger-menu {
     display: block;
