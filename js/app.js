@@ -2,8 +2,8 @@ import { validateForm } from "./components/formValidation";
 import { sliderMove } from "./components/sliderMove";
 
 const BURGER_BUTTON = document.querySelector(".burger-button")
-const BURGER_MENU = document.querySelector("#burger-menu")
-const BURGER_ITEM = document.querySelectorAll("#burger-link")
+const BURGER_MENU = document.querySelector(".burger-menu")
+const BURGER_ITEM = document.querySelectorAll(".burger__link")
 const SHADOW = document.querySelector(".shadow-wrapper")
 const FORM = document.querySelector("#request-form");
 const CONTROL_BUTTONS = document.querySelectorAll(".controller__button");
