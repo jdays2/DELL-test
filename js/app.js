@@ -1,5 +1,5 @@
 import { validateForm } from "./components/formValidation";
-import { sliderMove, autoMoveSlider } from "./components/sliderMove";
+import { sliderMove } from "./components/sliderMove";
 
 const BURGER_BUTTON = document.querySelector(".burger-button")
 const BURGER_MENU = document.querySelector(".burger-menu")
@@ -41,7 +41,7 @@ BURGER_ITEM.forEach(element => {
 
 
 //Слайдер
-
+sliderMove(0)
 
 CONTROL_BUTTONS.forEach((button, index) => {
   button.addEventListener("click", ()=>sliderMove(index));
