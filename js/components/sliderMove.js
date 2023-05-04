@@ -7,6 +7,7 @@ let activeControlButtonIndex = 0;
 CARDS[activeCardIndex].classList.add("card--active");
 CONTROL_BUTTONS[activeControlButtonIndex].classList.add("controller__button--active");
 
+
 export const sliderMove = (index) => {
     const CARDS = document.querySelectorAll(".card");
     let CARD_WIDTH = CARDS[0].offsetWidth;
