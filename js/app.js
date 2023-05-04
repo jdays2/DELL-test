@@ -1,5 +1,5 @@
 import { validateForm } from "./components/formValidation";
-import { sliderMove } from "./components/sliderMove";
+import { sliderMove, autoMoveSlider } from "./components/sliderMove";
 
 const BURGER_BUTTON = document.querySelector(".burger-button")
 const BURGER_MENU = document.querySelector(".burger-menu")
@@ -15,7 +15,7 @@ FORM.addEventListener("submit", (event) => {
   if (validateForm()) {
     setTimeout(() => {
       window.location.reload()
-    }, 2000);
+    }, 1000);
   }
 });
 
@@ -42,8 +42,9 @@ BURGER_ITEM.forEach(element => {
 
 //Слайдер
 
-sliderMove(0)
 
 CONTROL_BUTTONS.forEach((button, index) => {
   button.addEventListener("click", ()=>sliderMove(index));
 });
+
+
